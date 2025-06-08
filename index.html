@@ -4,46 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Flor</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--<link rel="stylesheet" href="./style.css">-->
+
+    <style>
+        .hero-bg{
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+
+        article:hover{
+            transform: translate(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
 </head>
-<body>
-    <header>
-        <h1>Flor Milagros Lucana Huamani</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Sobre mí</a></li>
-                <li><a href="pages/pasatiempos.html">Pasatiempos</a></li>
-                <li><a href="pages/hobies.html">Hobies</a></li>
-                <li><a href="pages/actividades_favoritas.html">Actividades favoritas</a></li>
-            </ul>
+<body class="font-sans bg-gray-50">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <section class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-beige-800">Flor Milagros</h1>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="Inicio" class="text-gray-800 hover:text-blue-600">Inicio</a></li>
+                    <li><a href="Sobre mí" class="text-gray-800 hover:text-blue-600">Sobre mí</a></li>
+                    <li><a href="Proyectos" class="text-gray-800 hover:text-blue-600">Proyectos</a></li>
+                    <li><a href="contacto" class="text-gray-800 hover:text-blue-600">Contacto</a></li>    
+                </ul>
+                <button class="md:hidden focus:outlin-none">
+                    <i class="fas fa-bars text-gray-800 text-xl"></i>
+                </button>
+            </section>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Sobre mí:</h2>
-            <p>¡Hola soy Flor, nací el 24 de marzo del 2006!</p>
-            <img src="/assets/sunshine.jpg", width="15%",>
-            <hr>
-            
-            <article>
-                <h2>Formación Académica:</h2>
-                <ul>
-                <p><strong>Instituto:</strong> Instituto de Educación Superior Tecnológico Puquio <strong>"José María Arguedas".</strong></p>
-                <p><strong>Carrera:</strong> Arquitectura de Plataformas y Servicios de Tecnología de la Información.</p>
-                <p><strong>Periodo Actual:</strong> V Ciclo</p>
-                <img src="/assets/dying.jpg", width="15%">
-                </ul>
-                <hr>
-            </article>
-
+    <main id="Inicio" class="hero-bg text-white py-20">
+        <section class="containermx-auto px-6 flex flex-col md:flex-row items-center">
+            <section class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Flor Milagros Lucana Huamani</h2>
+                <p class="text-xl mb-8">No sé que poner 😁</p>
+                <button class="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    Descarga CV
+                </button>
+            </section>
+            <figure class="md:w-1/2 flex justify-center">
+                <img src="/assets/sunshine.jpg" alt="" class="bg-white roundend-full w-64 h-64 flex items-center justify-center shadow-xl object-cover">
+            </figure>    
         </section>
     </main>
+
+
+    <article id="Sobre mí" class="py-16 bg-white">
+        <section class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre mí</h2>
+            <section class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <p class="text-lg text-gray-700 mb-6">
+                    Soy Estudiante de APSTI , V periodo y me gusta ....
+                </p>
+            </section>
+
+            <section class="md:w-1/2">
+                <section class="mb-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Habilidades Técnicas</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4"> 
+                        <li class="bg-gray-100 p-4 rounded-lg transition duration-300">
+                            <h4 class="font-medium text-blue-800">Lenguajes</h4>
+                            <p class="text-gray-700"></p>
+                        </li>
+
+                        <li class="bg-gray-100 p-4 rounded-lg transition duration-300">
+                            <h4 class="font-medium text-blue-800">Control de Versiones</h4>
+                            <p class="text-gray-700"></p>
+                        </li>
+
+                        <li class="bg-gray-100 p-4 rounded-lg transition duration-300">
+                            <h4 class="font-medium text-blue-800">Hardware</h4>
+                            <p class="text-gray-700"></p>
+                        </li>
+
+                        <li class="bg-gray-100 p-4 rounded-lg transition duration-300">
+                            <h4 class="font-medium text-blue-800">Redes</h4>
+                            <p class="text-gray-700"></p>
+                        </li>
+                    </ul> 
+            </section>
+        </section>
+    </article>
+
     <footer>
-        <a href="https://facebook.com" target="_blank"><img src="./assets/facebook-brands.svg" width="2%"></a>
-        <a href="https://instagram.com" target="_blank"><img src="./assets/instagram-brands.svg" width="2%"></a>
-        <a href="https://wa.me/+51935644188" target="_blank"><img src="./assets/whatsapp-brands.svg" width="2%"></a>
-        <hr>
+        
 
     </footer>
     
